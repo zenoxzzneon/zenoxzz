@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada de Número</title>
+</head>
+<body>
+
+    <h2>Introduce un número:</h2>
+    <input type="number" id="numero" placeholder="Escribe un número">
+
+    <button onclick="mostrarNumero()">Enviar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function mostrarNumero() {
+            var numero = document.getElementById("numero").value;
+            document.getElementById("resultado").innerText = "El número ingresado es: " + numero;
+        }
+    </script>
+
+</body>
+</html>
+>

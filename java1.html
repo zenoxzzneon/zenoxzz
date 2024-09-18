@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta charset="UTF-8"> 
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+   var var1=50
+   var var2=10
+   var variable1="Esta cadena de texto se define por FUERA de una funcion";
+   resultado__uno=var1+var2;
+   resultado__dos=var1-var2;
+   alert("conversion variable a cadena de texto \n el resultado es " + resultado__uno);
+   alert("conversion variable a cadena de texto \n el resultado es " + resultado__dos);
+
+   function ejemplo (){
+    var variable2="esta cadena de texto de ha definido por DENTRO de una funcion";
+    document.write(variable2);
+}
+    //imprecion de la variable local 
+    document.write(variable1+"<br>");
+//variable global imprecion//
+ejemplo();
+
+</script>
+</body>
+
+
+</html>

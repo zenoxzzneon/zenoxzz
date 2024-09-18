@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Estructuras condicionales</title>
+    </head>
+    <body>
+        <script type="text/JavaScript">
+            // SE MANEJA DE LA SIGUIENTE forma,
+            // if, for, while, do while, switch
+
+            // el if se emplea cuando es necesario ejecutar un fragmento de codigo 
+            // segun los valores determinados
+
+            var valor1, valor2;
+            valor1 = 20;
+            valor2 = 10;
+            if( valor1 >=valor2)
+            {
+                document.write("El valor1 es mas grande que el valor 2");
+            }
+
+            function hola(){
+                if(document.formulario.nombre.value=="Carlos")
+                {
+                    alert("Buenos dias carlos. hace rato que te esperaba");
+                }
+                else
+                {
+                    alert("No te conozco pero de todos modos, buenos dias");
+                }
+            } 
+
+            var nombre;
+            nombre = prompt("Hola, ¿Quien eres carlos o Lydia?","");
+            // el llamado prompt es una ventana para ingresar texto
+            if((nombre="Carlos")||(nombre=="Lydia") )
+            {
+                alert("Buenos dias "+ nombre +"hace rato que no te esperaba");
+            }else
+            {
+                alert("No te conozco "+ nombre +"pero de todos modos buenos dias");
+            }  
+</script>
+<form action="" id="formulario" name="formulario">
+    <p>Seleccione un nombre de la lista:
+    <select name="nombre" size="1" onchange="hola();">
+        <option value="Manolo"> Manolo</option>
+        <option value="Lucas"> Lucas</option>
+        <option value="Carlos"> Carlos</option>
+        <option value="Javier"> Javier</option>
+    </select></p>
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body{
+    background-color: aliceblue;
+}
+
+.container{
+    background-color: white;
+margin-top: 50px;
+}
+
+.aling-pagination{
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+}
+.margin-row{
+    margin-top: 15px;
+
+}
+.color-text{
+    color: aqua;
+}
